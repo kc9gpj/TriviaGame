@@ -63,7 +63,8 @@ function newgame() {
 }
 
 $(document).ready(function () {
-    
+    $('#new').hide();
+
     var userClick ="";
     var running = false;
     var questionLength = questionPool.length;
@@ -161,7 +162,8 @@ $(document).ready(function () {
             $("#answers").append("<p> Correct: " + right + "</p>" );
             $("#answers").append("<p> Not Correct: " + wrong + "</p>" );
             $("#answers").append("<p> Not Answered: " + unanswered + "</p>" );
-    // otherwise run timer again and render a question with a gap of 3 seconds
+            $('#new').show();
+            // otherwise run timer again and render a question with a gap of 3 seconds
         } else {
             run();
             renderQuestion();
