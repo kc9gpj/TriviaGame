@@ -64,7 +64,6 @@ function newgame() {
 
 $(document).ready(function () {
     
-   
     var userClick ="";
     var running = false;
     var questionLength = questionPool.length;
@@ -87,10 +86,10 @@ $(document).ready(function () {
             renderQuestion();
             run();
             for(var i = 0; i < questionPool.length; i++) {
-        questionArray.push(questionPool[i]);
+            questionArray.push(questionPool[i]);
     }
+})
     // timer start, countdown and stop
-        })
     function run(){
         if (!running) {
         intervalId = setInterval(decrement, 1000); 
@@ -136,7 +135,7 @@ $(document).ready(function () {
             $("#answers").html("<p>Correct!</p>");
             pictureHide();
             right++;
-    // else conditions if not right 
+    // else conditions if not right, display correct answer
         } else {
             stop();
             userClick="";
@@ -158,13 +157,10 @@ $(document).ready(function () {
     // if scores are as long as questionPool then display scores for right, wrong, unanswered
         if ((wrong + right + unanswered) === questionLength) {
             $("#main").empty();
-            $("#main").html("<p>Score:   </p>");
+            $("#main").html("<p>Score:    " + (right / 11 * 100).toFixed(0) + "%</p>");
             $("#answers").append("<p> Correct: " + right + "</p>" );
             $("#answers").append("<p> Not Correct: " + wrong + "</p>" );
             $("#answers").append("<p> Not Answered: " + unanswered + "</p>" );
-            right = 0;
-            wrong = 0;
-            unanswered = 0;
     // otherwise run timer again and render a question with a gap of 3 seconds
         } else {
             run();
