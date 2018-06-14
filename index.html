@@ -6,25 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel"stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="assets/images/nfl.png">
+
     <title>NFL Trivia</title>
   </head>
   <body>
 
  <nav class="navbar navbar-dark bg-dark">
-    <span id="nav" class="navbar-brand mb-0 h1">NFL Trivia</span>
+    <span id="nav" class="navbar-brand mb-0 h1"> <img id="icon" src="assets/images/nfl.png"> NFL Trivia</span>
+   
         <button class="navbar" id="nav" onclick="newgame()">New Game</button>
         </nav>
-
+<div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><button id="start">Start Game!</button></center>
+</div>
  <div>
     </div>
- <div class="container jumbotron-fluid">
+ <div class="container">
     <div class="row">
          <div class="col-sm-4">
                             
             </div>
-<div id="main" class="jumbotron" class="col-sm-4">
+<div id="main" class="col-sm-4 text-center">
                             
             </div>
  <div class="col-sm-4">
@@ -35,16 +45,14 @@
 
  <div>
     </div>
- 
+ <br>
+ <br>
+ <br>
     <div class="row">
          <div class="col-sm-4">
                             
             </div>
-<div onclick = id="answers" class="col-sm-4">
-    <button id="first"></button>
-    <button  id="second"></button>
-    <button id="third"></button>
-    <button  id="fourth"></button>
+<div id="answers" class="col-sm-4 text-center">
 
             </div>
  <div class="col-sm-4">
@@ -52,12 +60,15 @@
             
                  </div>
                      </div>
+                     <br>
+                     <br>
+                     <br>
  <div class="container">
 <div class="row">
     <div class="col-sm-4">
                 
         </div>
-    <div id="timer" class="col-sm-4">
+    <div id="timer" class="col-sm-4 text-center">
                 
         </div>
     <div class="col-sm-4">

@@ -1,0 +1,46 @@
+body {
+ 
+    background-image: url(assets/images/field.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+
+    
+}
+
+#timer {
+    color: gold;
+    font-size: 60px;
+    background: black;
+    font-family:'digital-clock-font';
+
+}
+
+#answers {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#answers:hover
+{
+    cursor: pointer;
+
+}
+
+#main {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;    
+
+}
+
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('assets/digital.ttf');
+   }
+
+#icon {
+    height: 40px;
+    width: 40px;
+}
+
